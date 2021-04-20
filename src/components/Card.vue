@@ -15,7 +15,8 @@
                 </div>
 
                 <div class="passwordText">
-                    <input type="password" v-model="password" v-show="!showPass" readonly/><span v-show="!showPass"
+                    <input type="password" v-model="password" v-show="!showPass" 
+                    readonly/><span v-show="!showPass"
                         class="passwordAppendage">9784</span>
                     <input type="text" v-model="password" v-show="showPass" readonly/><span v-show="showPass"
                         class="openPasswordAppendage">9784</span>
@@ -34,8 +35,7 @@
                         </p>
                         <p class="ccv">
                             <label for="">CCV</label>
-                            <input type="password" id="hiddenPassword" v-model="ccv" v-show="!showCCV" readonly/>
-                            <input type="text" id="hiddenPassword" v-model="ccv" v-show="showCCV" readonly/>
+                            <input type="password" id="hiddenPassword" value="123" readonly/>
                         </p>
                     </div>
                 </div>
@@ -52,7 +52,7 @@ export default {
      return{
             showPass: false,
             showCCV: false,
-            password: '9784       9784      9784',
+            password: '9784       9784       9784',
             ccv: '123'
         }
    }
