@@ -15,7 +15,7 @@
                 </div>
 
                 <div class="passwordText">
-                    <input type="password" v-model="password" v-show="!showPass" 
+                    <input type="password" v-model="password" v-show="!showPass" id
                     readonly/><span v-show="!showPass"
                         class="passwordAppendage">9784</span>
                     <input type="text" v-model="password" v-show="showPass" readonly/><span v-show="showPass"
@@ -48,12 +48,11 @@
 <script>
 export default {
   name: 'Card',
-   data(){
+
+    data(){
      return{
             showPass: false,
-            showCCV: false,
             password: '9784       9784       9784',
-            ccv: '123'
         }
    }
 }

@@ -114,7 +114,7 @@ button:focus {
     display: flex;
     color: #fff;
     position: relative;
-    top: 9rem;
+    top: 8.5rem;
 }
 
 .footerRightInfo {
@@ -150,6 +150,34 @@ button:focus {
 
 #hiddenPassword {
     margin-left: 0.8rem;
+}
+
+@media screen and (max-width: 768px) {
+.cardBody {
+    position: absolute;
+    width: 450px;
+    height: 305px;
+    /* left: 729px; */
+    top: calc(50% - 305px / 2 - 36.5px);
+    background: #131313;
+    border-radius: 20px;
+}
+
+.cardContents {
+    position: relative;
+    left: 4rem;
+    top: 5.9rem;
+}
+
+.iconBackground {
+    background-image: url(/img/patriciaIcon.4c2336dd.png);
+    background-size: cover;
+    position: relative;
+    top: -2rem;
+    left: -2rem;
+    background-repeat: no-repeat;
+    height: 21rem;
+}
 }
 
 </style>
